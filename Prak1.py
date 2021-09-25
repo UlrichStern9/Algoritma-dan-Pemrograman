@@ -36,12 +36,18 @@ def elkom1():
 
 
 def elkom2():
-    a1 = int(input("Masukkan titik koordinat A1: "))
-    a2 = int(input("Masukkan titik koordinat A2: "))
-    b1 = int(input("\nMasukkan titik koordinat B1: "))
-    b2 = int(input("Masukkan titik koordinat B2: "))
-    jarak = ((((a2 - a1) ** 2) + ((b2 - b1) ** 2)) ** 0.5)
-    print("\nJarak dari titik", (a1, a2), "dan", (b1, b2), "adalah: ", jarak, "\n")
+    import math
+
+    a = input("Masukkan titik koordinat A: ").split()
+    b = input("Masukkan titik koordinat B: ").split()
+    a0 = int(a[0])
+    a1 = int(a[1])
+    b0 = int(b[0])
+    b1 = int(b[1])
+    jarak = math.sqrt(((a0 - b0) ** 2) + ((a1 - b1) ** 2))
+
+    print("\nJarak dari titik a(" + str(a0) + "," + str(a1) + ")", "dan b(" + str(b0) + "," + str(b1) + ")", "adalah:",
+          round(int(jarak)) , "\n")
 
 
 def elkom3():
