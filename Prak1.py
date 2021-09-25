@@ -9,15 +9,17 @@ Terima kasih.
 
 def mulai():
     while True:
-        masuk = int(input("Elkom?: "))
-        if masuk == 1:
+        masuk = input("Elkom?: ")
+        if masuk == "1":
             elkom1()
-        elif masuk == 2:
+        elif masuk == "2":
             elkom2()
-        elif masuk == 3:
+        elif masuk == "3":
             elkom3()
+        elif masuk == "e":
+            break
         else:
-            print("Pilih 1, 2 atau 3\n")
+            print("Pilih 1, 2 atau 3, e untuk keluar\n")
 
 
 def elkom1():
