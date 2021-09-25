@@ -1,4 +1,7 @@
 """
+Nama: Muhammad Azka Aulia
+NIM: 064001900026
+
 Jalankan file-nya, kemudian pilih sesuai elemen kompetensinya.
 Terima kasih.
 """
