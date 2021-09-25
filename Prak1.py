@@ -41,14 +41,14 @@ def elkom2():
     print("\nJarak dari titik", (a1, a2), "dan", (b1, b2), "adalah: ", jarak, "\n")
 
 def elkom3():
-    besar = str(input("Please enter a 4-characters string: "))
-    kecil = ""
+    kecil = str(input("Please enter a 4-characters string: "))
+    besar = ""
 
-    for i in besar:
+    for i in kecil:
         if 97 <= ord(i) <= 122:
-            kecil = kecil + chr(ord(i) - 32)
+            besar = besar + chr(ord(i) - 32)
 
-    print("The string capitalizaiton is: ", kecil, "\n")
+    print("The string capitalizaiton is: ", besar, "\n")
 
 if __name__ == "__main__":
     mulai()
