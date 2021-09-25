@@ -1,3 +1,8 @@
+"""
+Jalankan file-nya, kemudian pilih sesuai elemen kompetensinya.
+Terima kasih.
+"""
+
 def mulai():
     while True:
         masuk = int(input("Elkom?: "))
