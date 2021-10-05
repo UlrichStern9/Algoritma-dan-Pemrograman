@@ -1,3 +1,8 @@
+"""
+Nama: Muhammad Azka Aulia
+NIM: 064001900026
+"""
+
 def mulai():
     while True:
         masuk = input("Elkom?: ")
