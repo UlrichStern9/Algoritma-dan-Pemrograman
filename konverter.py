@@ -1,6 +1,6 @@
 while True:
     pilihan = int(input(
-        "---PROGRAM KONVERSI BILANGAN---\n1 -> Desimal ke biner\n2 -> Desimal ke biner\n3 -> Keluar\nSilakan pilih menu: "))
+        "---PROGRAM KONVERSI BILANGAN---\n1 -> Desimal ke biner\n2 -> Biner ke desimal\n3 -> Keluar\nSilakan pilih menu: "))
 
     if pilihan == 1:
         bilangan = int(input("Masukkan bilangan desimal: "))
