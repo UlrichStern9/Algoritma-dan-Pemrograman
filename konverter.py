@@ -26,6 +26,7 @@ while True:
         print("Nilai desimalnya adalah: ", desimal, "\n")
 
     if pilihan == 3:
+        print("Terima kasih telah menggunakan program ini!")
         break
 
     else:
