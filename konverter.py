@@ -10,7 +10,7 @@ while True:
             sisa = bilangan % 2
             bilangan = bilangan // 2
             hasil = str(sisa) + hasil
-        print("Nilai binernya adalah: ", hasil,"\n")
+        print("Nilai binernya adalah: ", hasil, "\n")
 
     if pilihan == 2:
         biner = int(input("Masukkan bilangan biner: "))
@@ -23,7 +23,7 @@ while True:
             i = i * 2
             biner = int(biner / 10)
 
-        print("Nilai desimalnya adalah: ", desimal)
+        print("Nilai desimalnya adalah: ", desimal, "\n")
 
     if pilihan == 3:
         break
