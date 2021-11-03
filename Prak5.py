@@ -80,7 +80,7 @@ def elkom2():
     print("Waktu Kerja\t:", jam_kerja, "Jam", "(" + str_masuk, "s/d", str_keluar + ")")
     print("Gaji per Hari\t: Rp.", str(f'{gaji_perhari:,}').replace(',', '.'))
 
-    if jam_kerja >= 8:
+    if jam_kerja > 8:
         jam_lembur = jam_kerja - jadwal_kerja
         lembur = gaji_lembur * jam_lembur
 
