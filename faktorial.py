@@ -10,5 +10,5 @@ def faktorial(angka):
     return 2
 
 
-masuk = int(input("Masukkan angka: "))
+masuk = int(input("PROGRAM MENCARI NILAI FAKTORIAL DARI SEBUAH ANGKA\nMasukkan angka: "))
 print("Nilai faktorialnya adalah:", faktorial(masuk))
