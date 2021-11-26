@@ -21,8 +21,7 @@ def elkom1():
     def konversi(list):
         return tuple(i for i in list)
 
-    list = [3, 15, 4, 7, 10, 5]
-    print("List:", list, "\n" + "Hasil reverse list menjadi tuple:", konversi(list), "\n")
+    print("List:", list, "\n" + "Hasil reverse list menjadi tuple:", konversi([3, 15, 4, 7, 10, 5]), "\n")
 
 
 def elkom3():
