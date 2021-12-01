@@ -26,7 +26,7 @@ def elkom1():
             list_huruf.append(huruf[index])
         return "".join(list_huruf)
 
-    print("Karakter indeks ganjil:", indeks_ganjil(masuk))
+    print("Karakter indeks ganjil:", indeks_ganjil(masuk), "\n")
 
 
 def elkom2():
@@ -39,7 +39,7 @@ def elkom2():
         jumlah = jumlah + pertama
         pertama = pertama + 1
 
-    print("Jumlah range adalah:", jumlah)
+    print("Jumlah range adalah:", jumlah, "\n")
 
 
 if __name__ == "__main__":
