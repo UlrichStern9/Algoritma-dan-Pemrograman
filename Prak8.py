@@ -36,8 +36,8 @@ def elkom2():
     kedua = int(input("Masukkan angka kedua: "))
 
     while pertama <= kedua:
-        jumlah = jumlah + pertama
-        pertama = pertama + 1
+        jumlah += pertama
+        pertama += 1
 
     print("Jumlah range adalah:", jumlah, "\n")
 
