@@ -20,7 +20,7 @@ def mulai():
         elif masuk == "e":
             break
         else:
-            print("Pilih 1, 2 atau 3, e untuk keluar\n")
+            print("Pilih 1, 2, 3 atau 4, e untuk keluar\n")
 
 
 def elkom1():
