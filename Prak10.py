@@ -42,22 +42,25 @@ def hitung_rerata():
         print(nama, "=", rata2)
     print("")
 
+def mulai():
+    while True:
+        pilihan = input(
+            "PROGRAM LIST\n1. Input Data\n2. View Data\n3. Hitung Nilai Rata-Rata Praktikum Tiap Mahasiswa\nPilih menu "
+            "yang "
+            "tersedia: ")
+        print("")
+    
+        if pilihan == "1":
+            input_data()
+        elif pilihan == "2":
+            view_data()
+        elif pilihan == "3":
+            hitung_rerata()
+        elif pilihan == "7":
+            print("[7. EXIT]\nTERIMA KASIH!")
+            break
+        else:
+            print("Pilih 1, 2, 3, 7 untuk keluar\n")
 
-while True:
-    pilihan = input(
-        "PROGRAM LIST\n1. Input Data\n2. View Data\n3. Hitung Nilai Rata-Rata Praktikum Tiap Mahasiswa\nPilih menu "
-        "yang "
-        "tersedia: ")
-    print("")
-
-    if pilihan == "1":
-        input_data()
-    elif pilihan == "2":
-        view_data()
-    elif pilihan == "3":
-        hitung_rerata()
-    elif pilihan == "7":
-        print("[7. EXIT]\nTERIMA KASIH!")
-        break
-    else:
-        print("Pilih 1, 2, 3, 7 untuk keluar\n")
+if __name__ == "__main__":
+    mulai()
