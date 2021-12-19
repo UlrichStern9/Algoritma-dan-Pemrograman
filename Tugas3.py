@@ -2,6 +2,7 @@
 Nama: Muhammad Azka Aulia
 NIM: 064001900026
 """
+
 # Deklarasi variabel ongkos_tujuan, ongkos_berat, ongkir sebagai variabel global
 ongkos_tujuan, ongkos_berat, ongkir = 0, 0, 0
 
@@ -10,12 +11,14 @@ daftar_tujuan = ["jakarta", "bogor", "depok", "tangerang", "bekasi", "bandung", 
                  "malang", "padang", "manado", "manokwari", "denpasar", "pontianak"]
 
 kode_tujuan = ["JKT", "BGR", "DPK", "TGR", "BKS", "BDG", "SMG", "SBY",
-           "YK", "MN", "PDG", "MND", "MKW", "DNP", "PNK"]
+               "YK", "MN", "PDG", "MND", "MKW", "DNP", "PNK"]
+
 
 # Fungsi untuk mengambil data tujuan yang dimasukkan pengguna
 def input_tujuan():
     inp_tujuan = str(input("Tujuan? (tekan q untuk keluar): "))
     return inp_tujuan.strip().lower()
+
 
 # Fungsi untuk menyeleksi dan menyingkat nama kota menjadi kode kota
 def seleksi_tujuan(tujuan):
@@ -39,6 +42,7 @@ def seleksi_tujuan(tujuan):
 
     return seleksi.get(tujuan, "error")
 
+
 # Fungsi untuk menangani input yang benar dan lanjut ke tahap selanjutnya
 def tangani_input_benar(tujuan):
     while tujuan in daftar_tujuan and tujuan != "q":
@@ -61,6 +65,7 @@ def tangani_input_benar(tujuan):
 
     tangani_input_salah(tujuan)
 
+
 # Fungsi untuk menghitung ongkir berdasarkan kota tujuannya
 def ongkir_tujuan(tujuan):
     global ongkos_tujuan
@@ -76,6 +81,7 @@ def ongkir_tujuan(tujuan):
             or tujuan == "pontianak":
         ongkos_tujuan = 50000
 
+
 # Fungsi untuk menghitung ongkir berdasarkan beratnya
 def ongkir_berat(berat):
     global ongkos_berat, ongkir
@@ -86,9 +92,11 @@ def ongkir_berat(berat):
         ongkos_berat = ongkos_berat + ((berat - 20) * 1500)
         ongkir = ongkos_tujuan + ongkos_berat
 
+
 # Fungsi untuk menghitung Pajak Pertambahan Nilai
 def ppn():
     return round(ongkir * 10 // 100)
+
 
 # Fungsi untuk menangani input yang salah dan memberi peringatan
 def tangani_input_salah(tujuan):
@@ -102,6 +110,7 @@ def tangani_input_salah(tujuan):
     else:
         print("Terima kasih telah menggunakan program kami.\n")
 
+
 # Fungsi untuk menampilkan rincian biaya dari ongkos kirimnya
 def rincian_biaya(tujuan, berat, ppn):
     print("---------------------Rincian Biaya-----------------------")
@@ -111,11 +120,13 @@ def rincian_biaya(tujuan, berat, ppn):
     print("4. Biaya Total\t:\t\t\tRp. ", str(f'{ongkir + ppn:,}').replace(',', '.') + ", 00")
     print("---------------------------------------------------------\n")
 
+
 # Fungsi untuk memulai programnya
 def mulai():
     print("PT CepatSampai")
     tujuan = input_tujuan()
     tangani_input_benar(tujuan)
+
 
 # Fungsi main
 if __name__ == "__main__":
