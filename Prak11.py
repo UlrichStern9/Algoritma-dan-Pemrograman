@@ -52,7 +52,7 @@ def mulai():
     while True:
         pilihan = input("MENU\n"
                         "1. Baca Data\n"
-                        "2. Mencari Nilai Rata-Rata Praktikum Mahasiswa\n"
+                        "2. Mencari Rata-Rata Nilai Praktikum Mahasiswa\n"
                         "5. Exit\n"
                         "Pilih menu yang tersedia: ")
         print("")
