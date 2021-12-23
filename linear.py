@@ -19,5 +19,5 @@ while True:
         return "Tidak Ditemukan\n"
 
 
-    x = int(input("Masukkan angka yang dicari : "))
-    print("Hasil Linear Search -> " + str(linearsearch(list_linear, x)))
+    dicari = int(input("Masukkan angka yang dicari : "))
+    print("Hasil Linear Search -> " + str(linearsearch(list_linear, dicari)))
