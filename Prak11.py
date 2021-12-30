@@ -63,11 +63,11 @@ def update_nilai_prak():
 
 def simpan_perubahan():
     print("[4. SIMPAN UPDATE NILAI]")
-    baca_data4 = open("Data Nilai.txt", "r")
+    baca_data4 = open(nama_file, "r")
     data_nilai = baca_data4.readlines()
     data_nilai[indeks] = temp_update
 
-    baca_data4 = open("Data Nilai.txt", "w")
+    baca_data4 = open(nama_file, "w")
     baca_data4.writelines(data_nilai)
     baca_data4.close()
     print("PERUBAHAN BERHASIL DISIMPAN\n")
