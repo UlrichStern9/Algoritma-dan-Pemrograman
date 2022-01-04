@@ -30,7 +30,8 @@ def lihat_nilai():
         if nama in data_nilai[nilai][0]:
             prak1, prak2, prak3 = int(data_nilai[nilai][1]), int(data_nilai[nilai][2]), int(data_nilai[nilai][3])
             print(" NAMA | RERATA | PRAK 1 | PRAK 2 | PRAK 3\n------------------------------------------")
-            print("{} \t {} \t   {} \t    {} \t     {}\n".format(nama, round((prak1 + prak2 + prak3) / 3),prak1, prak2, prak3))
+            print("{} \t {} \t   {} \t    {} \t     {}\n".format(nama, round((prak1 + prak2 + prak3) / 3), prak1, prak2,
+                                                                 prak3))
             break
 
 
@@ -111,9 +112,9 @@ def lihat_semua():
         rerata_prak3.append(prak3)
         print("{} \t  {} \t   {} \t    {} \t     {}".format(nama, round(rerata_mhs), prak1, prak2, prak3))
     print("------------------------------------------")
-    print("RERATA PRAKTIKUM: {} \t   {}\t    {}\n".format(sum(rerata_prak1) / len(rerata_prak1),
-                                                         sum(rerata_prak2) / len(rerata_prak2),
-                                                         sum(rerata_prak3) / len(rerata_prak3)))
+    print("RERATA PRAKTIKUM:  {} \t    {}\t     {}\n".format(round(sum(rerata_prak1) / len(rerata_prak1)),
+                                                          round(sum(rerata_prak2) / len(rerata_prak2)),
+                                                          round(sum(rerata_prak3) / len(rerata_prak3))))
 
 
 def simpan_ke_file(f=None):
