@@ -113,8 +113,8 @@ def lihat_semua():
         print("{} \t  {} \t   {} \t    {} \t     {}".format(nama, round(rerata_mhs), prak1, prak2, prak3))
     print("------------------------------------------")
     print("RERATA PRAKTIKUM:  {} \t    {}\t     {}\n".format(round(sum(rerata_prak1) / len(rerata_prak1)),
-                                                          round(sum(rerata_prak2) / len(rerata_prak2)),
-                                                          round(sum(rerata_prak3) / len(rerata_prak3))))
+                                                             round(sum(rerata_prak2) / len(rerata_prak2)),
+                                                             round(sum(rerata_prak3) / len(rerata_prak3))))
 
 
 def simpan_ke_file(f=None):
