@@ -1,4 +1,4 @@
-Joni 	    75 	   80 	   65
+Joni 	   75 	   80 	   65
 Edwin 	  85 	   85 	   90
 Reina 	  50 	   60 	   60
 Daniel 	  90 	   85 	   95
