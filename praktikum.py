@@ -84,7 +84,7 @@ def hapus_data():
                     break
 
     elif pilihan == "B":
-        print("[B. HAPUS SEMUA DATA DALAM FILE]")
+        print("\n[B. HAPUS SEMUA DATA DALAM FILE]")
         with open(nama_file, 'r+') as f:
             f.truncate(0)
         print("ISI FILE BERHASIL DIHAPUS")
